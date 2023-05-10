@@ -8,7 +8,7 @@ import { RouterLink, RouterView } from 'vue-router'
     <a class="bold" href="#">Logo</a>
 
     <nav>
-      <a href="">About</a>
+      <a href="">Abouti</a>
       <a href="">Work</a>
       <a href="">Contact</a>
     </nav>
