@@ -2,19 +2,21 @@
 import LogosSection from '../components/LogosSection.vue';
 import About from '../components/About.vue';
 import Works from '../components/Works.vue';
+import ListaWorks from '../components/ListaWorks.vue';
 import Clients from '../components/Clients.vue';
 
-/* Importando imagens */
-
+/* Importando imagens about */
 import about1 from '../assets/about/about1.svg';
 import about2 from '../assets/about/about2.svg';
 import about3 from '../assets/about/about3.svg';
+
 
 export default {
     components: {
         LogosSection,
         About,
         Works,
+        ListaWorks,
         Clients
     },
     data() {
@@ -75,7 +77,7 @@ export default {
     </section>
 
     <section id="works">
-        <Works />
+        <ListaWorks />
     </section>
 
     <section id="clients">
