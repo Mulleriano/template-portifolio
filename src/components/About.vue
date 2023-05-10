@@ -23,7 +23,7 @@ export default {
 <style scoped>
 
 .card {
-    max-width: 25vw;
+    max-width: 24vw;
     padding: 3.7rem 2rem;
 }
 
