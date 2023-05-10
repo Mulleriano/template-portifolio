@@ -10,21 +10,9 @@ export default {
     data() {
         return {
             logos: [
-                {
-                    src: adidas,
-                    alt: "Adidas"
-                },
-                {
-                    src: apple,
-                    alt: "Apple"
-                },
-                {
+            {
                     src: google,
                     alt: "Google"
-                },
-                {
-                    src: intercom,
-                    alt: "Intercom"
                 },
                 {
                     src: nike,
@@ -33,7 +21,22 @@ export default {
                 {
                     src: samsung,
                     alt: "Samsung"
+                },
+                {
+                    src: apple,
+                    alt: "Apple"
+                },
+
+                {
+                    src: intercom,
+                    alt: "Intercom"
+                },
+                {
+                    src: adidas,
+                    alt: "Adidas"
                 }
+
+
             ]
         }
     }
