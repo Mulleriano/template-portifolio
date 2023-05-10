@@ -22,9 +22,10 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <style scoped>
   header {
-    background-color: aqua;
+    z-index: 1;
     height: 10vh;
     padding: 0 3rem;
+    background-color: aqua;
 
     display: flex;
     justify-content: space-between;
@@ -33,18 +34,19 @@ import { RouterLink, RouterView } from 'vue-router'
   }
 
   header > a {
-    font-weight: 600; 
+    font-size: 1.3rem;
+    font-weight: 600;
   }
 
   nav {
     width: 20%;
     display: flex;
     justify-content: space-between;
+    font-size: 1rem;
   }
 
   main {
-    height: 120vh;
-    padding-top: 10vh;
+    height: 200vh;
     background-color: antiquewhite;
   }
 </style>
