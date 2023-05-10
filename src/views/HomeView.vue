@@ -1,14 +1,52 @@
-<script setup>
+<script>
 import LogosSection from '../components/LogosSection.vue';
 import About from '../components/About.vue';
 import Works from '../components/Works.vue';
+import ListaWorks from '../components/ListaWorks.vue';
 import Clients from '../components/Clients.vue';
+
+/* Importando imagens about */
+import about1 from '../assets/about/about1.svg';
+import about2 from '../assets/about/about2.svg';
+import about3 from '../assets/about/about3.svg';
+
+
+export default {
+    components: {
+        LogosSection,
+        About,
+        Works,
+        ListaWorks,
+        Clients
+    },
+    data() {
+        return {
+            abouts: [
+                {
+                    src: about1,
+                    titulo: "Product design",
+                    text: "This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com"
+                },
+                {
+                    src: about2,
+                    titulo: "Art direction",
+                    text: "This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com"
+                },
+                {
+                    src: about3,
+                    titulo: "Visual design",
+                    text: "This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com"
+                }
+            ]
+        }
+    }
+}
 
 </script>
 
 <template>
     <section id="hero">
-        
+
         <div class="heroContent">
             <p class="branding bold">Branding | Image Making</p>
             <h1 class="bold">
@@ -33,11 +71,13 @@ import Clients from '../components/Clients.vue';
     </section>
 
     <section id="about">
-        <About />
+        <div v-for="about in abouts">
+            <About :src="about.src" :titulo="about.titulo" :text="about.text"/>
+        </div>
     </section>
 
     <section id="works">
-        <Works />
+        <ListaWorks />
     </section>
 
     <section id="clients">
@@ -47,7 +87,6 @@ import Clients from '../components/Clients.vue';
     <section id="contact">
 
     </section>
-
 </template>
 
 <style scoped>
@@ -55,9 +94,10 @@ import Clients from '../components/Clients.vue';
 #hero {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     height: 80vh;
+    padding: 0 5rem;
 }
 
 h1 {
@@ -70,11 +110,12 @@ h1 {
     font-size: 1.2rem;
 }
 
-.heroContent > p {
-    line-height: 1.6rem;
+/* Estilo da seção about */
+#about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 3rem 0;
 }
-
-/* Estilo da seção de logos */
-
-
 </style>

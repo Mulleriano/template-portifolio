@@ -66,7 +66,7 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: transparent;
+  background: antiquewhite;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -81,9 +81,16 @@
 
 a {
   text-decoration: none;
-  color: #2D2D2D;
 }
 
 .bold {
   font-weight: 600;
+}
+
+p {
+  line-height: 1.6rem;
+}
+
+h1, h2, h3, h4, a, p {
+  color: #2D2D2D;
 }

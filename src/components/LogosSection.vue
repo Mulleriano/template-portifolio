@@ -10,21 +10,9 @@ export default {
     data() {
         return {
             logos: [
-                {
-                    src: adidas,
-                    alt: "Adidas"
-                },
-                {
-                    src: apple,
-                    alt: "Apple"
-                },
-                {
+            {
                     src: google,
                     alt: "Google"
-                },
-                {
-                    src: intercom,
-                    alt: "Intercom"
                 },
                 {
                     src: nike,
@@ -33,7 +21,22 @@ export default {
                 {
                     src: samsung,
                     alt: "Samsung"
+                },
+                {
+                    src: apple,
+                    alt: "Apple"
+                },
+
+                {
+                    src: intercom,
+                    alt: "Intercom"
+                },
+                {
+                    src: adidas,
+                    alt: "Adidas"
                 }
+
+
             ]
         }
     }
@@ -41,7 +44,7 @@ export default {
 </script>
 
 <template>
-    <div class="teste">
+    <div class="container">
         <div class="logos" v-for="logo in logos">
             <img :src="logo.src" :alt="logo.alt">
         </div>
@@ -50,7 +53,7 @@ export default {
 </template>
 
 <style scoped>
-    .teste {
+    .container {
         display: flex;
         justify-content: space-around;
         align-items: center;
