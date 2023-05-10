@@ -51,13 +51,13 @@ import Clients from '../components/Clients.vue';
 </template>
 
 <style scoped>
+/* Estilo do Hero */
 #hero {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
     height: 80vh;
-    background-color: red;
 }
 
 h1 {
@@ -73,6 +73,8 @@ h1 {
 .heroContent > p {
     line-height: 1.6rem;
 }
+
+/* Estilo da seção de logos */
 
 
 </style>

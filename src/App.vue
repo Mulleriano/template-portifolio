@@ -25,7 +25,6 @@ import { RouterLink, RouterView } from 'vue-router'
     z-index: 1;
     height: 10vh;
     padding: 0 3rem;
-    background-color: aqua;
 
     display: flex;
     justify-content: space-between;
