@@ -13,7 +13,7 @@ export default {
         <div class="card">
             <img class="imagem" :src="src" alt="">
 
-            <h2 class="titulo"> {{ titulo }} </h2>
+            <h3 class="titulo"> {{ titulo }} </h3>
 
             <p class="text"> {{ text }}</p>
         </div>
@@ -33,6 +33,8 @@ export default {
 
 .titulo {
     padding-bottom: 1.25rem;
+    font-size: 1.6rem;
+    font-weight: 600;
 }
 
 

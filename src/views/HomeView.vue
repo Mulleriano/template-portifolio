@@ -69,7 +69,7 @@ export default {
     </section>
 
     <section id="about">
-        <div class="containerAbout" v-for="about in abouts">
+        <div v-for="about in abouts">
             <About :src="about.src" :titulo="about.titulo" :text="about.text"/>
         </div>
     </section>
@@ -92,9 +92,10 @@ export default {
 #hero {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     height: 80vh;
+    padding: 0 5rem;
 }
 
 h1 {
