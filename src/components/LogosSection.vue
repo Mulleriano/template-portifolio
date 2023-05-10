@@ -41,7 +41,7 @@ export default {
 </script>
 
 <template>
-    <div class="teste">
+    <div class="container">
         <div class="logos" v-for="logo in logos">
             <img :src="logo.src" :alt="logo.alt">
         </div>
@@ -50,7 +50,7 @@ export default {
 </template>
 
 <style scoped>
-    .teste {
+    .container {
         display: flex;
         justify-content: space-around;
         align-items: center;
