@@ -7,14 +7,23 @@ import Clients from '../components/Clients.vue';
 </script>
 
 <template>
-    <section id="Hero">
+    <section id="hero">
         
         <div class="heroContent">
+            <p class="branding bold">Branding | Image Making</p>
+            <h1 class="bold">
+                Visual <br>
+                Designer
+            </h1>
 
+            <p>
+                This is a template Figma file, turned into code <br>
+                using Anima. Learn more at AnimaApp.com
+            </p>
         </div>
 
         <div class="heroImg">
-
+            <img src="../assets/hero.png" alt="Hero">
         </div>
 
     </section>
@@ -41,5 +50,29 @@ import Clients from '../components/Clients.vue';
 
 </template>
 
-<style>
+<style scoped>
+#hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80vh;
+    background-color: red;
+}
+
+h1 {
+    font-size: 6rem;
+    padding: 3rem 0;
+    font-weight: 600;
+}
+
+.branding {
+    font-size: 1.2rem;
+}
+
+.heroContent > p {
+    line-height: 1.6rem;
+}
+
+
 </style>

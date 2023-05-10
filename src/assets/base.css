@@ -83,3 +83,7 @@ a {
   text-decoration: none;
   color: #2D2D2D;
 }
+
+.bold {
+  font-weight: 600;
+}

@@ -5,7 +5,7 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <template>
   <header>
-    <a href="#">Logo</a>
+    <a class="bold" href="#">Logo</a>
 
     <nav>
       <a href="">About</a>
@@ -35,7 +35,6 @@ import { RouterLink, RouterView } from 'vue-router'
 
   header > a {
     font-size: 1.3rem;
-    font-weight: 600;
   }
 
   nav {
