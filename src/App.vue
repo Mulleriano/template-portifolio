@@ -22,6 +22,9 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <style scoped>
   header {
+    position: fixed;
+    top: 0;
+    width: 100vw;
     z-index: 1;
     height: 10vh;
     padding: 0 3rem;
