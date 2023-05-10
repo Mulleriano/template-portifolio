@@ -50,10 +50,40 @@
   }
 }
 
+
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
   margin: 0;
+  font-family: 'Epilogue', sans-serif;
+  overflow-x: hidden;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #747474;
+  border-radius: 50px;
+  transition: 0.5s; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #505050;
+}
+
+a {
+  text-decoration: none;
+  color: #2D2D2D;
+}
+
+.bold {
+  font-weight: 600;
+}
