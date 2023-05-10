@@ -33,7 +33,7 @@ import Clients from '../components/Clients.vue';
     </section>
 
     <section id="about">
-        <About />
+        <About titulo="Product Design" text="This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com"/>
     </section>
 
     <section id="works">
@@ -69,11 +69,6 @@ h1 {
 .branding {
     font-size: 1.2rem;
 }
-
-.heroContent > p {
-    line-height: 1.6rem;
-}
-
 /* Estilo da seção de logos */
 
 

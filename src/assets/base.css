@@ -87,3 +87,7 @@ a {
 .bold {
   font-weight: 600;
 }
+
+p {
+  line-height: 1.6rem;
+}
