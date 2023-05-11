@@ -78,7 +78,7 @@ h2 {
 .projects {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 8vw;
+    column-gap: 5vw;
     row-gap: 5vh;
 }
 
