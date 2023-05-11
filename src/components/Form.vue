@@ -57,6 +57,40 @@ export default {
       rows="10"
     ></textarea>
 
-    <button type="submit">Submit</button>
+    <button class="submit bold" type="submit">Submit</button>
   </form>
 </template>
+
+<style scoped>
+
+form {
+/*   width: 70%; */
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1rem;
+  width: 35vw;
+  margin-bottom: 1rem;
+  border: 0;
+  background-color: #F3F3F3;
+  color: #2D2D2D;
+}
+
+.submit {
+  margin-top: 1rem;
+  padding: 1.5rem 5rem;
+  text-decoration: underline;
+  font-size: 1.2rem;
+  color: white;
+  background-color: #2D2D2D;
+  border: none;
+  cursor: pointer;
+  transition: all ease 0.3s;
+}
+
+.submit:hover {
+  opacity: 0.8;
+}
+</style> 

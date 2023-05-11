@@ -47,6 +47,6 @@ import { RouterLink, RouterView } from 'vue-router'
   }
 
   main {
-    padding: 10vh 5vw;
+    padding: 0 5vw;
   }
 </style>
