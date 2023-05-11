@@ -65,13 +65,12 @@ export default {
 .container {
   display: flex;
   flex-direction: column;
-  padding-bottom: 3rem;
 }
 
 h2 {
   text-align: center;
   font-size: 2rem;
-  padding: 3rem 0 5rem 0;
+  padding-bottom: 3rem ;
 }
 
 .projects {

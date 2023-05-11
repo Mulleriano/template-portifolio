@@ -23,7 +23,7 @@ export default {
 <style scoped>
 .card {
   max-width: 24vw;
-  padding: 3.7rem 2rem;
+  padding: 0 2rem;
 }
 
 .imagem {

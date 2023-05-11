@@ -54,7 +54,6 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 4rem 0;
 }
 
 .logos {

@@ -36,7 +36,7 @@ export default {
   padding: 1.7rem;
   background-color: #f3f3f3;
   width: 17vw;
-  height: 44vh;
+  height: 50vh;
 }
 
 .text {

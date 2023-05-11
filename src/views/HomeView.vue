@@ -87,6 +87,7 @@ h1 {
     font-size: 1.2rem;
 }
 
-/* Estilo da seção about */
-
+#logos, #about, #works, #clients, #contact {
+    padding: 4rem 0;
+}
 </style>

@@ -2,26 +2,26 @@
 export default {
   data() {
     return {
-      Nome: "",
-      Email: "",
-      Mensagem: "",
+      formData: {},
     };
   },
   methods: {
     enviaInput(event) {
       event.preventDefault();
 
-      console.log({
-        Nome: this.Nome,
-        Email: this.Email,
-        Mensaem: this.Mensagem
-      })
+      let dados = "";
+
+      for (const chave of Object.keys(this.formData)) {
+        dados += `${chave}: ${this.formData[chave]}, `;
+      }
+
+      alert (dados);
     },
     recebeInput(event) {
       const nomeDoInput = event.target.name;
       const valorDoInput = event.target.value;
 
-      this[nomeDoInput] = valorDoInput;
+      this.formData[nomeDoInput] = valorDoInput;
     },
   },
 };
@@ -34,27 +34,27 @@ export default {
       type="text"
       name="Nome"
       placeholder="Name"
-      :value="name"
+      :value="formData.Nome"
       @keyup="recebeInput"
     />
 
     <input
-    class="input" 
-    type="email"
-    name="email"
-    placeholder="Email"
-    :value="Email"
-    @keyup="recebeInput"
+      class="input"
+      type="email"
+      name="Email"
+      placeholder="Email"
+      :value="formData.Email"
+      @keyup="recebeInput"
     />
 
     <textarea
-    class="input"
-    name="Mensagem"
-    placeholder="Message"
-    :value="Mensagem"
-    @keyup="recebeInput"
-    cols="30"
-    rows="10"
+      class="input"
+      name="Mensagem"
+      placeholder="Message"
+      :value="formData.Mensagem"
+      @keyup="recebeInput"
+      cols="30"
+      rows="10"
     ></textarea>
 
     <button type="submit">Submit</button>
