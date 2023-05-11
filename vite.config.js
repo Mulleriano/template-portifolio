@@ -13,6 +13,6 @@ export default defineConfig({
     }
   },
   base: process.env.NODE_ENV === 'production'
-    ? '/template-portifolio'
+    ? '/template-portifolio/'
     : '/'
 })
