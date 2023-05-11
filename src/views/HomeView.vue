@@ -1,45 +1,22 @@
 <script>
 import LogosSection from '../components/LogosSection.vue';
 import About from '../components/About.vue';
+import ListaAbout from '../components/ListaAbout.vue';
 import Works from '../components/Works.vue';
 import ListaWorks from '../components/ListaWorks.vue';
 import Clients from '../components/Clients.vue';
 
-/* Importando imagens about */
-import about1 from '../assets/about/about1.svg';
-import about2 from '../assets/about/about2.svg';
-import about3 from '../assets/about/about3.svg';
 
 
 export default {
     components: {
         LogosSection,
         About,
+        ListaAbout,
         Works,
         ListaWorks,
         Clients
     },
-    data() {
-        return {
-            abouts: [
-                {
-                    src: about1,
-                    titulo: "Product design",
-                    text: "This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com"
-                },
-                {
-                    src: about2,
-                    titulo: "Art direction",
-                    text: "This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com"
-                },
-                {
-                    src: about3,
-                    titulo: "Visual design",
-                    text: "This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com"
-                }
-            ]
-        }
-    }
 }
 
 </script>
@@ -71,9 +48,7 @@ export default {
     </section>
 
     <section id="about">
-        <div v-for="about in abouts">
-            <About :src="about.src" :titulo="about.titulo" :text="about.text"/>
-        </div>
+        <ListaAbout />
     </section>
 
     <section id="works">
@@ -111,11 +86,5 @@ h1 {
 }
 
 /* Estilo da seção about */
-#about {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    text-align: center;
-    padding: 3rem 0;
-}
+
 </style>
