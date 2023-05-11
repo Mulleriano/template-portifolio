@@ -6,8 +6,7 @@ import Works from '../components/Works.vue';
 import ListaWorks from '../components/ListaWorks.vue';
 import Clients from '../components/Clients.vue';
 import ListaClients from '../components/ListaClients.vue';
-
-
+import Contact from '../components/Contact.vue';
 
 export default {
     components: {
@@ -17,7 +16,8 @@ export default {
         Works,
         ListaWorks,
         Clients,
-        ListaClients
+        ListaClients,
+        Contact
     },
 }
 
@@ -62,7 +62,7 @@ export default {
     </section>
 
     <section id="contact">
-
+        <Contact />
     </section>
 </template>
 
