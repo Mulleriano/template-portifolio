@@ -35,4 +35,11 @@ export default {
   font-size: 1.6rem;
   font-weight: 600;
 }
+
+@media screen and (max-width:600px) {
+  .card {
+    max-width: fit-content;
+    padding-top: 2rem;
+  }
+}
 </style>

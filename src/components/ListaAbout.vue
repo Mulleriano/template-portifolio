@@ -47,4 +47,11 @@ export default {
   justify-content: space-between;
   text-align: center;
 }
+
+@media screen and (max-width: 600px){
+  .container {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
 </style>
