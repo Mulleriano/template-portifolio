@@ -5,6 +5,7 @@ import ListaAbout from '../components/ListaAbout.vue';
 import Works from '../components/Works.vue';
 import ListaWorks from '../components/ListaWorks.vue';
 import Clients from '../components/Clients.vue';
+import ListaClients from '../components/ListaClients.vue';
 
 
 
@@ -15,7 +16,8 @@ export default {
         ListaAbout,
         Works,
         ListaWorks,
-        Clients
+        Clients,
+        ListaClients
     },
 }
 
@@ -56,7 +58,7 @@ export default {
     </section>
 
     <section id="clients">
-        <Clients />
+        <ListaClients />
     </section>
 
     <section id="contact">
