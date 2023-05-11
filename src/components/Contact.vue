@@ -1,12 +1,10 @@
 <script>
+import Form from './Form.vue';
 export default {
-    methods: {
-        trataForm() {
-
-        }
+    components: {
+        Form,
     }
 }
-
 </script>
 
 <template>
@@ -19,17 +17,15 @@ export default {
             <div class="redesSociais">
 
             </div>
+            <Form />
         </div>
 
-        <form action=""></form>
     </div>
 
 
 </template>
 
 <style>
-.container {
-    
-}
+
 
 </style>

@@ -44,7 +44,7 @@ export default {
 .container {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   text-align: center;
   padding: 2rem 0;
 }

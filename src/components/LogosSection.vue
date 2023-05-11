@@ -52,7 +52,7 @@ export default {
 <style scoped>
 .container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   padding: 4rem 0;
 }

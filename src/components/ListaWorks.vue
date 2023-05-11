@@ -65,7 +65,6 @@ export default {
 .container {
   display: flex;
   flex-direction: column;
-  align-items: center;
   padding-bottom: 3rem;
 }
 
@@ -76,9 +75,16 @@ h2 {
 }
 
 .projects {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 5vw;
-  row-gap: 5vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
+
+.projects > div {
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+  margin: 3vh 5vw;
+}
+
 </style>

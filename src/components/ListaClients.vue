@@ -30,6 +30,12 @@ export default {
           userName: "Gemma Nolen,",
           userCompany: "Google",
         },
+        {
+          text: "This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com",
+          userImg: client3,
+          userName: "Gemma Nolen,",
+          userCompany: "Google",
+        },
       ],
     };
   },
@@ -55,7 +61,7 @@ export default {
 .avaliacao {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 h2 {

@@ -47,8 +47,6 @@ import { RouterLink, RouterView } from 'vue-router'
   }
 
   main {
-    height: 400vh;
-    padding: 10vh 0;
-    background-color: antiquewhite;
+    padding: 10vh 5vw;
   }
 </style>
