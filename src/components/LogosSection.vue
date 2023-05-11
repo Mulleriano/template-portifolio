@@ -52,6 +52,7 @@ export default {
 <style scoped>
 .container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
@@ -60,5 +61,18 @@ export default {
   width: max-content;
   display: flex;
   align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    display: flex;
+  }
+
+  .logos {
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 4vh 2vw;
+  }
 }
 </style>

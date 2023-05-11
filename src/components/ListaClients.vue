@@ -30,12 +30,6 @@ export default {
           userName: "Gemma Nolen,",
           userCompany: "Google",
         },
-        {
-          text: "This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com",
-          userImg: client3,
-          userName: "Gemma Nolen,",
-          userCompany: "Google",
-        },
       ],
     };
   },
@@ -68,5 +62,12 @@ h2 {
   text-align: center;
   font-size: 2rem;
   padding-bottom: 3rem;
+}
+
+@media screen and (max-width: 600px) {
+  .avaliacao {
+    flex-direction: column;
+
+  }
 }
 </style>

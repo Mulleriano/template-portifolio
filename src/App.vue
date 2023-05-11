@@ -49,4 +49,17 @@ import { RouterLink, RouterView } from 'vue-router'
   main {
     padding: 0 5vw;
   }
+
+  @media screen and (max-width: 600px) {
+    header {
+      justify-content: center;
+    }
+    nav{
+      display: none;
+    }
+
+    main {
+      padding: 0 1.5rem;
+    }
+  }
 </style>

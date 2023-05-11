@@ -52,4 +52,11 @@ export default {
   height: min-content;
   margin-right: 1rem;
 }
+
+@media screen and (max-width: 600px) {
+  .avaliacao {
+    width: auto;
+    margin: 6vh 1.5vw;
+  }
+}
 </style>

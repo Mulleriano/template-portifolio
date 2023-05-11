@@ -53,4 +53,12 @@ h2 {
     margin-right: 1rem;
 }
 
+@media screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+    .content {
+        width: auto;
+    }
+}
 </style>

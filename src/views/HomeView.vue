@@ -1,93 +1,132 @@
 <script>
-import LogosSection from '../components/LogosSection.vue';
-import About from '../components/About.vue';
-import ListaAbout from '../components/ListaAbout.vue';
-import Works from '../components/Works.vue';
-import ListaWorks from '../components/ListaWorks.vue';
-import Clients from '../components/Clients.vue';
-import ListaClients from '../components/ListaClients.vue';
-import Contact from '../components/Contact.vue';
+import LogosSection from "../components/LogosSection.vue";
+import About from "../components/About.vue";
+import ListaAbout from "../components/ListaAbout.vue";
+import Works from "../components/Works.vue";
+import ListaWorks from "../components/ListaWorks.vue";
+import Clients from "../components/Clients.vue";
+import ListaClients from "../components/ListaClients.vue";
+import Contact from "../components/Contact.vue";
 
 export default {
-    components: {
-        LogosSection,
-        About,
-        ListaAbout,
-        Works,
-        ListaWorks,
-        Clients,
-        ListaClients,
-        Contact
-    },
-}
-
+  components: {
+    LogosSection,
+    About,
+    ListaAbout,
+    Works,
+    ListaWorks,
+    Clients,
+    ListaClients,
+    Contact,
+  },
+};
 </script>
 
 <template>
-    <section id="hero">
+  <section id="hero">
+    <div class="heroContent">
+      <p class="branding bold">Branding | Image Making</p>
+      <h1 class="bold">
+        Visual <br />
+        Designer
+      </h1>
 
-        <div class="heroContent">
-            <p class="branding bold">Branding | Image Making</p>
-            <h1 class="bold">
-                Visual <br>
-                Designer
-            </h1>
+      <p>
+        This is a template Figma file, turned into code using Anima. Learn more
+        at AnimaApp.com
+      </p>
+    </div>
 
-            <p>
-                This is a template Figma file, turned into code <br>
-                using Anima. Learn more at AnimaApp.com
-            </p>
-        </div>
+    <div class="heroImg">
+      <img src="../assets/hero.png" alt="Hero" />
+    </div>
+  </section>
 
-        <div class="heroImg">
-            <img src="../assets/hero.png" alt="Hero">
-        </div>
+  <section id="logos">
+    <LogosSection />
+  </section>
 
-    </section>
+  <section id="about">
+    <ListaAbout />
+  </section>
 
-    <section id="logos">
-        <LogosSection />
-    </section>
+  <section id="works">
+    <ListaWorks />
+  </section>
 
-    <section id="about">
-        <ListaAbout />
-    </section>
+  <section id="clients">
+    <ListaClients />
+  </section>
 
-    <section id="works">
-        <ListaWorks />
-    </section>
-
-    <section id="clients">
-        <ListaClients />
-    </section>
-
-    <section id="contact">
-        <Contact />
-    </section>
+  <section id="contact">
+    <Contact />
+  </section>
 </template>
 
 <style scoped>
 /* Estilo do Hero */
 #hero {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    height: 80vh;
-    padding: 0 5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 84vh;
+  padding: 0 5rem;
+}
+
+.heroContent {
+  width: 50%;
 }
 
 h1 {
-    font-size: 6rem;
-    padding: 3rem 0;
-    font-weight: 600;
+  font-size: 6rem;
+  padding: 3rem 0;
+  font-weight: 600;
 }
 
 .branding {
-    font-size: 1.2rem;
+  font-size: 1.25rem;
 }
 
-#logos, #about, #works, #clients, #contact {
-    padding: 4rem 0;
+.heroImg {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#logos,
+#about,
+#works,
+#clients,
+#contact {
+  padding: 4rem 0;
+}
+
+@media screen and (max-width: 600px) {
+  #hero {
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 10vh;
+    text-align: center;
+    height: auto;
+  }
+  .heroContent {
+    width: auto;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+  .heroImg {
+    width: 100%;
+    padding-top: 7vh;
+  }
+
+  #logos,
+  #about,
+  #works,
+  #clients,
+  #contact {
+    padding: 2rem 0;
+  }
 }
 </style>
