@@ -63,10 +63,6 @@ export default {
 
 <style scoped>
 
-form {
-/*   width: 70%; */
-}
-
 .input {
   display: flex;
   flex-direction: column;
@@ -92,5 +88,16 @@ form {
 
 .submit:hover {
   opacity: 0.8;
+}
+
+@media screen and (max-width:600px) {
+  
+  form {
+    margin-top: 8vh;
+  }
+
+  .input {
+    width: 100%;
+  }
 }
 </style> 
