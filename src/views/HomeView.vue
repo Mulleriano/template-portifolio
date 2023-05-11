@@ -106,7 +106,7 @@ h1 {
   #hero {
     flex-direction: column;
     justify-content: center;
-    padding: 14vh 0;
+    padding: 10vh 0;
     text-align: center;
     height: auto;
   }
