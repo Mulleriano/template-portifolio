@@ -89,9 +89,9 @@ h1 {
 }
 
 .heroImg {
-    width: 50%;
-    display: flex;
-    justify-content: flex-end;
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
 }
 
 #logos,
@@ -106,7 +106,7 @@ h1 {
   #hero {
     flex-direction: column;
     justify-content: center;
-    padding: 10vh 0;
+    padding-top: 10vh;
     text-align: center;
     height: auto;
   }
@@ -119,6 +119,14 @@ h1 {
   .heroImg {
     width: 100%;
     padding-top: 7vh;
-  } 
+  }
+
+  #logos,
+  #about,
+  #works,
+  #clients,
+  #contact {
+    padding: 2rem 0;
+  }
 }
 </style>
