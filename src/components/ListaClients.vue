@@ -55,7 +55,8 @@ export default {
 .avaliacao {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 h2 {

@@ -35,8 +35,9 @@ export default {
   justify-content: space-between;
   padding: 1.7rem;
   background-color: #f3f3f3;
-  width: 17vw;
+  width: 300px;
   height: 50vh;
+  margin: 30px 15px;
 }
 
 .text {
