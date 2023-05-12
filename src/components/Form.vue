@@ -15,6 +15,8 @@ export default {
         dados += `${chave}: ${this.formData[chave]}, `;
       }
 
+      document.getElementById("form").reset();
+
       alert (dados);
     },
     recebeInput(event) {
@@ -28,7 +30,7 @@ export default {
 </script>
 
 <template>
-  <form action="" @submit="enviaInput">
+  <form id="form" autocomplete="off" action="" @submit="enviaInput">
     <input
       class="input"
       type="text"
