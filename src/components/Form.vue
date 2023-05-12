@@ -15,9 +15,8 @@ export default {
         dados += `${chave}: ${this.formData[chave]}, `;
       }
 
-      document.getElementById("form").reset();
-
       alert (dados);
+      this.formData = {};
     },
     recebeInput(event) {
       const nomeDoInput = event.target.name;
