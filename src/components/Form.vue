@@ -15,7 +15,7 @@ export default {
         dados += `${chave}: ${this.formData[chave]}, `;
       }
 
-      alert (dados);
+/*       alert (dados); */
       this.formData = {};
     },
     recebeInput(event) {
